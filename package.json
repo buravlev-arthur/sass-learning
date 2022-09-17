@@ -1,0 +1,23 @@
+{
+  "name": "sass-learning",
+  "version": "1.0.0",
+  "description": "Learning SASS",
+  "main": "index.js",
+  "author": "Arthur Buralvljov",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.54.9",
+    "stylelint": "^14.11.0",
+    "stylelint-config-standard-scss": "^5.0.0"
+  },
+  "scripts": {
+    "sass": "npx sass src/:public/",
+    "sass-shell": "npx sass -i",
+    "pug": "npx pug src/ --pretty -o public",
+    "lint": "npx stylelint **/*.scss",
+    "compile": "yarn lint && yarn sass && yarn pug"
+  }
+}
