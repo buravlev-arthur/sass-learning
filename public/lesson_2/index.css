@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.link-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Вложенность */
+}
+.link-wrapper a {
+  color: blue;
+  text-decoration: none;
+  border-bottom: 1px solid #f9f9f9;
+  /* Суффикс (a:hover) */
+}
+.link-wrapper a img {
+  display: none;
+}
+.link-wrapper a:hover {
+  font-weight: bold;
+  color: red;
+  border-bottom: 1px solid white;
+}
+.link-wrapper a:hover img {
+  display: block;
+  width: 200px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=index.css.map */

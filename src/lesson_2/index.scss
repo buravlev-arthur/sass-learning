@@ -1,0 +1,29 @@
+.link-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Вложенность */
+  a {
+    color: blue;
+    text-decoration: none;
+    border-bottom: 1px solid #f9f9f9;
+
+    img {
+      display: none;
+    }
+
+    /* Суффикс (a:hover) */
+    &:hover {
+      font-weight: bold;
+      color: red;
+      border-bottom: 1px solid white;
+
+      img {
+        display: block;
+        width: 200px;
+        height: 100px;
+      }
+    }
+  }
+}
